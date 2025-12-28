@@ -1,0 +1,14 @@
+# Sensitive Data
+.env
+
+# Python specific
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+venv/
+env/
+
+# OS specific
+.DS_Store
