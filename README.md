@@ -7,19 +7,18 @@
 #   ╚██████╗   ██║   ██████╔╝███████╗██║  ██║██████╔╝╚██████╔╝██████╔╝██████╔╝    ██║    #
 #    ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═════╝ ╚═════╝     ╚═╝    #
 #                                                                                        #
-#   [ SYSTEM_ID: CYBER_BUDDY_V1.5 ]          **[ AUTHOR: VISHAL_YADAV ]**                #
-#                                                                                        #
+#   [ SYSTEM_ID: CYBER_BUDDY_V1.5 ]        [ AUTHOR: VISHAL_YADAV ]                        #
 #                                                                                        #
 ##########################################################################################
 
-> INITIALIZING INTERFACE...
-> LOADING GEMINI_FLASH_2.5_ENGINE...
-> CALIBRATING MAC_OS_RISHI_VOICE...
+INITIALIZING INTERFACE...
+LOADING GEMINI_FLASH_2.5_ENGINE...
+CALIBRATING MAC_OS_RISHI_VOICE...
 
 ---[ 01. CORE_LOGIC ]----------------------------------------------------------
 
-CYBER_BUDDY is a voice-activated LLM (Large Language Model) integration 
-designed for hands-free security analysis. It bypasses the need for 
+CYBER_BUDDY is a voice-activated LLM (Large Language Model) integration
+designed for hands-free security analysis. It bypasses the need for
 manual keyboard input during sensitive research sessions.
 
 LOGIC_FLOW:
@@ -27,42 +26,42 @@ LOGIC_FLOW:
 
 ---[ 02. SYSTEM_REQUIREMENTS ]-------------------------------------------------
 
-- OS     : macOS (Architecture-specific for native 'say' utility)
-- KERNEL : Python 3.8+
-- ASSET  : Gemini API Key (Stored in root/.env)
-- REQS   : PortAudio, PyAudio, SpeechRecognition, Google-GenerativeAI
+OS     : macOS (Native 'say' TTS)
+KERNEL : Python 3.8+
+ASSET  : Gemini API Key (root/.env)
+REQS   : PortAudio, PyAudio, SpeechRecognition, Google-GenerativeAI
 
 ---[ 03. DEPLOYMENT_SEQUENCE ]-------------------------------------------------
 
-[STEP_01] Clone the source:
+[STEP_01] Clone the source
 $ git clone https://github.com/Vishal-HaCkEr1910/CYBER-BUDDY-AI-VOICE-CHATBOT-.git
 
-[STEP_02] Install hardware bridges:
+[STEP_02] Install dependencies
 $ brew install portaudio
 $ pip install -r requirements.txt
 
-[STEP_03] Inject Credentials: (Put this inside a file named .env or just use the command below)
+[STEP_03] Inject credentials
 $ echo "GEMINI_API_KEY=your_key_here" > .env
 
-[STEP_04] Execute Binary:
+[STEP_04] Execute
 $ python3 CYBER_BUDDY.py
 
 ---[ 04. COMMANDS ]-----------------------------------------------------------
 
-- GREETING : "CyberBuddy is online. I am listening, Vishal."
-- ANALYSIS : Speak any security query or code snippet for auditing.
-- TERMINATE: "Exit", "Stop", or "Quit".
+GREETING  : CyberBuddy is online. I am listening, Vishal.
+ANALYSIS  : Speak any security query or code snippet for auditing.
+TERMINATE : Exit | Stop | Quit
 
----[ 05. SECURITY_INTEGRITY ]-------------------------------------------------
+---[ 05. SECURITY_INTEGRITY ]--------------------------------------------------
 
-- API keys are handled via python-dotenv and filtered through .gitignore.
-- Mic-Lock threading implemented to prevent resource deadlocks.
-- Ambient noise calibration ensures high-fidelity signal capture.
+- API keys secured via python-dotenv and .gitignore
+- Mic-lock threading prevents audio deadlocks
+- Ambient noise calibration ensures signal fidelity
 
----[ 06. DISCLAIMER ]---------------------------------------------------------
+---[ 06. DISCLAIMER ]----------------------------------------------------------
 
-AUTHORIZED USE ONLY. This tool is designed for white-hat research and 
-educational purposes. Unauthorized use against systems is strictly prohibited.
+AUTHORIZED USE ONLY.
+This tool is intended strictly for white-hat research and education.
+Unauthorized use against systems is prohibited.
 
-###############################################################################
-
+##########################################################################################
