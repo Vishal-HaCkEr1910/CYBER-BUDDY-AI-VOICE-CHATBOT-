@@ -1,21 +1,68 @@
-# CYBER-BUDDY-AI-VOICE-CHATBOT :
-"A voice-activated, macOS-optimized AI security assistant powered by Gemini 2.5 Flash. Features real-time speech recognition and native system-level feedback."
+##########################################################################################
+#                                                                                        #
+#    ██████╗██╗   ██╗██████╗ ███████╗██████╗ ██████╗ ██╗   ██╗██████╗ ██████╗  ██╗   ██╗ #
+#   ██╔════╝╚██╗ ██╔╝██╔══██╗██╔════╝██╔══██╗██╔══██╗██║   ██║██╔══██╗██╔══██╗ ╚██╗ ██╔╝ #
+#   ██║      ╚████╔╝ ██████╔╝█████╗  ██████╔╝██████╔╝██║   ██║██║  ██║██║  ██║  ╚████╔╝  #
+#   ██║       ╚██╔╝  ██╔══██╗██╔══╝  ██╔══██╗██╔══██╗██║   ██║██║  ██║██║  ██║   ╚██╔╝   #
+#   ╚██████╗   ██║   ██████╔╝███████╗██║  ██║██████╔╝╚██████╔╝██████╔╝██████╔╝    ██║    #
+#    ╚═════╝   ╚═╝   ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═════╝  ╚═════╝ ╚═════╝ ╚═════╝     ╚═╝    #
+#                                                                                        #
+#   [ SYSTEM_ID: CYBER_BUDDY_V1.5 ]          **[ AUTHOR: VISHAL_YADAV ]**                #
+#                                                                                        #
+#                                                                                        #
+##########################################################################################
 
-🛡️ CYBER_BUDDY
-CYBER_BUDDY is an AI-driven security assistant built with Python and the Google Gemini API. It is designed to assist in explaining security concepts, debugging code, and providing quick references for cybersecurity enthusiasts.
+> INITIALIZING INTERFACE...
+> LOADING GEMINI_FLASH_2.5_ENGINE...
+> CALIBRATING MAC_OS_RISHI_VOICE...
 
-🛠️ Setup & Installation
-Clone the repo,
+---[ 01. CORE_LOGIC ]----------------------------------------------------------
 
-git clone [https://github.com/YOUR_USERNAME/CYBER_BUDDY.git](https://github.com/YOUR_USERNAME/CYBER_BUDDY.git)
-cd CYBER_BUDDY
-Environment Setup Create a .env file in the root
-directory:GEMINI_API_KEY=your_api_key_here
+CYBER_BUDDY is a voice-activated LLM (Large Language Model) integration 
+designed for hands-free security analysis. It bypasses the need for 
+manual keyboard input during sensitive research sessions.
 
-Install Dependencies
+LOGIC_FLOW:
+[VOICE_INPUT] --> [GOOGLE_STT] --> [GEMINI_LLM] --> [MAC_SAY_TTS] --> [OUT]
 
-Bash: pip install -r requirements.txt
+---[ 02. SYSTEM_REQUIREMENTS ]-------------------------------------------------
 
-How to Use:
+- OS     : macOS (Architecture-specific for native 'say' utility)
+- KERNEL : Python 3.8+
+- ASSET  : Gemini API Key (Stored in root/.env)
+- REQS   : PortAudio, PyAudio, SpeechRecognition, Google-GenerativeAI
 
-Bash: python3 CYBER_BUDDY.py
+---[ 03. DEPLOYMENT_SEQUENCE ]-------------------------------------------------
+
+[STEP_01] Clone the source:
+$ git clone https://github.com/Vishal-HaCkEr1910/CYBER-BUDDY-AI-VOICE-CHATBOT-.git
+
+[STEP_02] Install hardware bridges:
+$ brew install portaudio
+$ pip install -r requirements.txt
+
+[STEP_03] Inject Credentials: (Put this inside a file named .env or just use the command below)
+$ echo "GEMINI_API_KEY=your_key_here" > .env
+
+[STEP_04] Execute Binary:
+$ python3 CYBER_BUDDY.py
+
+---[ 04. COMMANDS ]-----------------------------------------------------------
+
+- GREETING : "CyberBuddy is online. I am listening, Vishal."
+- ANALYSIS : Speak any security query or code snippet for auditing.
+- TERMINATE: "Exit", "Stop", or "Quit".
+
+---[ 05. SECURITY_INTEGRITY ]-------------------------------------------------
+
+- API keys are handled via python-dotenv and filtered through .gitignore.
+- Mic-Lock threading implemented to prevent resource deadlocks.
+- Ambient noise calibration ensures high-fidelity signal capture.
+
+---[ 06. DISCLAIMER ]---------------------------------------------------------
+
+AUTHORIZED USE ONLY. This tool is designed for white-hat research and 
+educational purposes. Unauthorized use against systems is strictly prohibited.
+
+###############################################################################
+
