@@ -18,7 +18,7 @@ def speak(text: str):
     os.system(f'say -v Rishi -r 185 "{clean_text}"')
 
 # ================= GEMINI SETUP =================
-SYSTEM_PROMPT = "You are CyberBuddy. Very concise. Address user as Vishal."
+SYSTEM_PROMPT = "You are CyberBuddy. Very concise. Address user as SIR."
 model = genai.GenerativeModel(model_name="gemini-2.5-flash", system_instruction=SYSTEM_PROMPT)
 
 def get_gemini_response(user_text: str):
@@ -44,7 +44,7 @@ def main():
         print("🔧 One-time calibration...")
         r.adjust_for_ambient_noise(source, duration=1)
     
-    speak("I am online, Vishal. Ask me anything.")
+    speak("I am online, SIR. Ask me anything.")
 
     while True:
         try:
@@ -63,7 +63,7 @@ def main():
             print(f"🗣 You: {user_text}")
 
             if any(word in user_text.lower() for word in ["exit", "stop", "quit"]):
-                speak("Shutting down. Goodbye Vishal.")
+                speak("Shutting down. Goodbye SIR.")
                 break
             
             # 1. Get Response
